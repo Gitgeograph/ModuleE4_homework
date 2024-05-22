@@ -1,3 +1,16 @@
+##Проверить есть ли группа docker
+```bash
+groups
+```
+Если нет, добавить группу 
+```bash
+groupadd docker
+```
+Дать права
+```
+sudo usermod -aG docker $(whoami)
+```
+
 # Запуск:
 
 ```bash
